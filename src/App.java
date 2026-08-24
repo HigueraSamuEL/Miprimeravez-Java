@@ -47,6 +47,23 @@ public class App {
         } else {
             System.out.print( "Reprobado");
         }
+                System.out.print("Ingrese la longitud del lado: ");
+        double lado = sc.nextDouble();
+        double areaCuadrado = lado * lado;
+        System.out.println("El área del cuadrado es: " + areaCuadrado);
+
+        System.out.print("Ingrese la base del radio: ");
+        double radio = sc.nextDouble();
+        double areaCirculo = Math.PI * radio * radio;
+        System.out.println("El área del círculo es: " + areaCirculo);
+
+        System.out.print("Ingrese la edad de la persona: ");
+        int edadPersona = sc.nextInt();
+        if (edadPersona >= 18) {
+            System.out.println("La persona es mayor de edad.");
+        } else {
+            System.out.println("La persona es menor de edad.");
+        }
 
 
 
