@@ -70,5 +70,42 @@ public class App {
 
 
     }
+--------------------------------------------------------------------------------------------------
+            for (int i = 1; i <= 10; i++) {
+            if (i == 5) break; // paa cuando i llega a 5
+            System.out.println(i); // imprime 1, 2, 3, 4
+        }
+        // continue - salta a la siguiente iteración.
+        for (int i = 1; i <= 10; i++) {
+            if (i % 2 == 0) continue; //salta los pares
+            System.out.println(i); // imprime 1,3,5,7,9
+        }
+        int[] notas = new int[5];
+
+        notas[0] = 85;
+        notas[1] = 90;
+        notas[2] = 78;
+        notas[3] = 92;
+        notas[4] = 88;
+
+        int[] edades = {18, 20, 22, 19, 21};
+        System.out.println(notas[0]); //85 por la lista
+        for (int i = 0; i < notas.length; i++) {
+            System.out.println("Nota " + (i+1) + " + notas[i]");
+        for (int nota : notas) {
+            System.out.println(nota);
+        }
+        }
+               System.out.print("Cuantos estudiantes hay? ");
+        int n = sc.nextInt();
+        double[] notas = new double[n];
+        double suma = 0;
+        for (int i = 0; i < n; i++) { 
+            System.out.print("Nota del estudiante " + (i + 1) + ": ");
+            notas[i] = sc.nextDouble();
+            suma += notas[i];
+        }
+        double promedio = suma / n;
+        System.out.println("promedio del grupo: " + promedio); 
 
 }
