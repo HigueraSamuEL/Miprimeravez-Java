@@ -108,4 +108,5 @@ public class App {
         double promedio = suma / n;
         System.out.println("promedio del grupo: " + promedio); 
 
+
 }
